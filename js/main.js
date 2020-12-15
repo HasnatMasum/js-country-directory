@@ -8,6 +8,7 @@ const countries = () => {
   fetch("https://restcountries.eu/rest/v2/all")
     .then(res => res.json())
     .then(datas => {
+      console.log(datas);
       for (let i = 0; i < datas.length; i++) {
         countrySelect.innerHTML += `<option value="${datas[i].alpha3Code}">${datas[i].name}</option>`;
       }
@@ -28,7 +29,7 @@ const country = () => {
       .then(datas => {
         let cname = datas.name;
         let capital = datas.capital;
-        let languages = datas.languages[0].name;
+        let languages = datas.languages.map(lname => lname.name);
         let region = datas.region;
         let regionalBlocs = datas.regionalBlocs.map(block => block.acronym);
         let callingCodes = datas.callingCodes[0];
