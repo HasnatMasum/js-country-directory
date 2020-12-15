@@ -1,0 +1,38 @@
+body {
+    position: relative;
+    background: url('../img/maps.jpg')no-repeat top/cover;
+    padding-top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.wraper {
+    background-color: rgb(195, 252, 233);
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
+}
+
+.wraper>h1 {
+    color: rgba(128, 0, 128, 1) !important;
+}
+
+@media (max-width: 800px) {
+    .content-details h4 {
+        font-size: 1.2rem !important;
+    }
+}
