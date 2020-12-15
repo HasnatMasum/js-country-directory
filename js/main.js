@@ -8,7 +8,6 @@ const countries = () => {
   fetch("https://restcountries.eu/rest/v2/all")
     .then(res => res.json())
     .then(datas => {
-      console.log(datas);
       for (let i = 0; i < datas.length; i++) {
         countrySelect.innerHTML += `<option value="${datas[i].alpha3Code}">${datas[i].name}</option>`;
       }
