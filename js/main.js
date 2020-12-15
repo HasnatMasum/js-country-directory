@@ -42,7 +42,7 @@ const country = () => {
         contentDetails.innerHTML = `<h4 class=" text-secondary mt-5 mb-3">Capital City: <span class="text-dark">${capital}</span>.</h4>`;
         contentDetails.innerHTML += `<h4 class=" text-secondary mb-3">Language: <span class="text-dark">${languages}</span>.</h4>`;
         contentDetails.innerHTML += `<h4 class=" text-secondary mb-3">Population: <span class="text-${pcolor}">${population}</span> million.</h4>`;
-        //contentDetails.innerHTML += `<h4 class=" text-secondary mb-3">Currencies: <span class="text-dark">${currencies}</span>.</h4>`;
+        contentDetails.innerHTML += `<h4 class=" text-secondary mb-3">Currencies: <span class="text-dark">${currencies}</span>.</h4>`;
         contentDetails.innerHTML += `<h4 class=" text-secondary mb-3">Region: <span class="text-dark">${region}</span>.</h4>`;
         contentDetails.innerHTML +=
           regionalBlocs.length !== 0
