@@ -49,7 +49,7 @@ const country = () => {
             : "";
         contentDetails.innerHTML += `<h4 class=" text-secondary mb-3">Calling Codes: <span class="text-dark">+${callingCodes}</span></h4>`;
         contentDetails.innerHTML += `<h4 class=" text-secondary mb-3">Time Zone: <span class="text-dark">${timezones}</span>.</h4>`;
-        flagWrap.innerHTML = `<img class="img-fluid mt-3" src="${datas.flag}" alt="${cname} flag image">`;
+        flagWrap.innerHTML = `<img class="img-fluid mt-5" src="${datas.flag}" alt="${cname} flag image">`;
       });
   }
 };
